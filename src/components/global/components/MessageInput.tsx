@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -31,7 +33,7 @@ export const MessageInput = () => {
 
   return (
     <>
-      <h2 className="mb-2 font-bold tracking-widest text-gray-100">
+      <h2 className="mb-2 font-bold tracking-widest text-xl text-gray-100">
         Entre em contato via Whatsapp!
       </h2>
       <div className="flex w-full max-w-xs items-center justify-center mx-auto space-x-2 mt-7">

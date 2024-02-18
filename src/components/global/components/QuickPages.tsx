@@ -22,13 +22,16 @@ const PAGES = [
 export const QuickPages = () => {
   return (
     <>
-      <h2 className="mb-2 font-bold tracking-widest text-gray-100">
-        Quick Links
+      <h2 className="mb-2 font-bold tracking-widest text-xl text-gray-100">
+        Navegue
       </h2>
-      <ul className="mb-8 space-y-2 text-md list-none">
+      <ul className="mb-8 space-y-2 text-md list-none max-w-[100px] mx-auto text-start">
         {PAGES.map((page) => (
           <li key={page.title}>
-            <Link href={page.href} className="text-100 hover:font-bold">
+            <Link
+              href={page.href}
+              className="text-500 hover:font-bold transition-all hover:text-100"
+            >
               {page.title}
             </Link>
           </li>

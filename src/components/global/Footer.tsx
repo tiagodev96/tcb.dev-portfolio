@@ -1,14 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Send, Twitter } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Logo } from "./components/Logo";
 import { MessageInput } from "./components/MessageInput";
 import { QuickPages } from "./components/QuickPages";
 import { Copyright } from "./components/Copyright";
+import { WelcomeFooter } from "./components/WelcomeFooter";
 
 export function Footer() {
   return (
@@ -26,27 +23,7 @@ export function Footer() {
       "
       >
         <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-          <Logo />
-          <p className="mt-2 text-xs text-justify text-100">
-            Bem-vindo ao meu site de portfolio! Aqui, você descobrirá o universo
-            que construo como desenvolvedor FullStack, pronto para abraçar
-            desafios e contribuir com minha paixão pela tecnologia. Explore meu
-            trabalho, conecte-se e juntos vamos criar algo extraordinário!
-          </p>
-          <div className="flex justify-center mt-4 space-x-4 lg:mt-8">
-            <Link href="https://twitter.com/tiagocb96" target="_blank">
-              <Twitter className="text-100 transition-all hover:text-sky-300" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/tiagocbatista"
-              target="_blank"
-            >
-              <Instagram className="text-100 transition-all hover:text-pink-500" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/tiagocb96/" target="_blank">
-              <Linkedin className="text-100 transition-all hover:text-blue-400" />
-            </Link>
-          </div>
+          <WelcomeFooter />
         </div>
 
         <div className="justify-between w-full mt-4 text-center lg:flex">
